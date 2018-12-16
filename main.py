@@ -31,8 +31,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     enter_url = args.url
     load_dotenv()
-    #key = os.getenv("key")
-    key = 'Bearer 54e0b10a39e63587b1470ada7c6046460dcc54da'
+    key = os.getenv("key")
     answer = get_clicks(enter_url)
     if answer == None:
         print('Ошибка запроса')
